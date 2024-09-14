@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Artist</title>
+    <link rel="stylesheet" href=""> <!-- Link to your external stylesheet -->
+    <style>
+        /* Basic reset and styling */
+
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            transition: transform .3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .ctn:hover {
+            background: whitesmoke;
+            color: #fc036b;
+            box-shadow: 2px 2px 5px black;
+        }
+        
+        li:hover {
+            color: #fc036b;
+            cursor: pointer;
+        }
+        body {
+            
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background: url(./aboutImg.jpg);
+        }
+        .footer {
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 300;
+        }
+        /* Container for the about section */
+
+        .about-section {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        .ctn {
+            padding:  8px 15px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+        }
+        .line {
+            width: 150px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style:none;
+            align-items: start;
+            color: #fffdfd;
+        }
+        
+        .navbar {
+            position:absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            align-items: start;
+        }
+
+        .nav-links {
+            display: inline-flex;
+            color: rgb(255, 255, 255);
+            
+        }
+        .nav-links li {
+            margin: 0 30px;
+            color: rgb(255, 251, 251);
+        }
+        .nav-links li::before {
+            color: #fcfcfc;
+        }
+        .nav-links li::after {
+            color: #ffffff;
+        }
+        .menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display:none;
+    
+}
+        /* Left column for the image */
+        .about-section .image-column {
+            flex: 1;
+            padding: 10px;
+            margin-left: 70px;
+            overflow-y: hidden;
+        }
+
+        .about-section .image-column img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            
+            
+        }
+
+        /* Right column for the text */
+        .about-section .text-column {
+            flex: 1;
+            font-weight: 500;
+            padding: 0;
+            background-color: none;
+            margin: 0 60px;
+            justify-content: center;
+            align-items: center;
+            background-color: #99939341;
+            color:#000000;
+        }
+
+        .about-section .text-column h1 {
+            font-size: 7vmin;
+            text-align: center; 
+            color: #000000;
+
+        }
+
+      
+
+        .about-section .text-column p {
+            font-size: 4vmin;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1.6;
+            color: #000000;
+           
+        }
+
+        /* Responsive Design */
+
+        @media screen and (max-width: 768px) {
+
+            .about-section {
+                flex-direction: column;
+            }
+
+            .navbar {
+            display: none;
+            }
+
+            .menu-btn {
+            position:absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+            display: inline-block;
+            }
+
+            .about-section .image-column,
+            .about-section .text-column {
+                padding: 10px;
+            }
+
+            .about-section .text-column h1 {
+                font-size: 2em;
+            }
+
+            .about-section .text-column p {
+                font-size: 1.1em;
+            }
+
+        }
+        /* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+    </style>
+     <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+</head>
+<br>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">HOME</a></li>
+            <li class="active"><a href="./trial.html">ABOUT</a></li>
+            <li class="active"><a href="./columns.html">EXPLORE</a></li>
+            <li class="active"><a href="#">COLLECTIONS</a></li>
+            <li class="ctn"><a href="#">CONTACT</a></li>
+        </ul>
+       <img src="./menu.png" alt="menu" class="menu">
+    </nav>
+    <section class="about-section">
+        <!-- Left: Image Column -->
+        <div class="image-column">
+            <img src="./kim2.webp" alt="Artist Photo"> <!-- Replace with your image file -->
+        </div>
+        <!-- Right: Text Column -->
+        <div class="text-column">
+            <h1>ABOUT KIMATHI</h1>
+            <div class="line"></div>
+            <br>Kimathi Mafafo (b. 1984) is a multidisciplinary artist whose practice ranges from embroidery and oil painting to installation. Mafafo obtained a National Diploma in Fine Arts from the College of Cape Town in 2007 and a National Diploma in Film and Video from the Cape Peninsula University of Technology in 2016. 
+            <br></br>
+            Born in the semi-arid Kimberley in the Northern Cape of South Africa, Mafafo questions historical stereotypes around gender inequality in Africa. She primarily focuses on celebrating the black female and depicting abstracted forms typically surrounded by verdant imagery, characterised by lush greenery and sensuous drapery that are far removed from the dusty mining town where she grew up. She has recently organized a group of Capetonian woman into an informal traditional embroidery society. 
+                <br></br>
+Solo exhibitions include (Upcoming) Kristin Hjellegjerde Gallery, West Palm Beach, USA (2025); Ebullience, Kristin Hjellegjerde Gallery, London (2024); Wandering in the Unknown World, Kristin Hjellegjerde Gallery, Berlin, Germany (2023); Kgolagano – A Covenant, Ebony Curated, Cape Town, South Africa (2022); Gestures from The Awakened Mind, Kristin Hjellegjerde Gallery, London, UK (2021); Embolden, Ebony Curated, Cape Town, South Africa (2019); Solo Presentation, at Investec Cape Town Art Fair, Ebony Curated (2018); CITCC, Cape Town, South Africa (2018); Alone in Spring, Ebony Curated, Cape Town, South Africa (2017); Withdrawn, World Art, Cape Town, South Africa (2015).</p>
+        </div>
+        
+    </section>
+
+    <a href="#" class="ctn">Learn More</a>
+        <section class="footer">
+            <p>Created by: Lesego Khunou (Front-End Developer) - Location: Upper Woodstock, Cape Town, 7925</p>
+        </section>
+    
+</body>
+</html>

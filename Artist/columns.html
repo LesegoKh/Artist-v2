@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(./Explore.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        * {
+           margin: 10px 0;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links li {
+            margin: 0 30px;
+            list-style: none;
+            
+        }
+        
+        .active {
+            color: #fc036b;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .ctn {
+            padding:  8px 15px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+        }
+        
+        .menu-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        body, html {
+            overflow-x: hidden;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            color: whitesmoke;
+            align-items: center;
+        }
+        .top {
+            margin: 10px auto; 
+            padding-top: 0.5px;
+            box-shadow: #ffcee294;
+        }
+        
+        .line {
+            width: 150px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .footer {
+            left: 0;
+            top: 0;
+            width: 100vw;
+            margin-top: 50px;
+            justify-content: end;
+            align-items: end;
+            background-color: rgb(216, 205, 205);
+            padding-bottom: 10px;
+
+        }
+        
+        .column {
+            display: flexbox;
+            width: 90%;
+            height: auto;
+            background-color: rgba(255, 234, 238, 0.774);
+            gap: 1px;
+            padding-top: 10px;
+            
+        }
+        .column img {
+            height: 50%;
+            
+        }
+        img {
+            max-height: 50%;
+            max-width: 50%;
+        }
+        .row {
+            grid-template-columns: repeat(2, 1fr);
+            grid-area: auto;
+            display: grid;
+            gap:3px;
+            margin:0 0 0 20px;
+        }
+
+        .row:after {
+            content: "";
+            display:table;
+            clear:both; 
+        }
+        /* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">HOME</a></li>
+            <li class="active"><a href="./trial.html">ABOUT</a></li>
+            <li class="active"><a href="./columns.html">EXPLORE</a></li>
+            <li class="active"><a href="./collections.html">COLLECTIONS</a></li>
+            <li class="ctn"><a href="#">CONTACT</a></li>
+        </ul>
+       <img src="./menu.png" alt="menu" class="menu-btn">
+    </nav>
+        <section class="top"></section>
+        <h1>RECENT EXHIBITIONS</h1>
+        <div class="line"></div>
+    <section>
+
+        <div class="row">
+            <div class="column">
+                
+                <img src="./khx.jpg" alt="Exhibition" class="img">
+                <h3>Ebullience</h3>
+                <h2>LONDON - 2024</h2>
+                <p>Woven portraits of illuminated women appear in a swirl of flowers and foliage, colourful patterns and textures</p>
+                <a href="https://kristinhjellegjerde.com/exhibitions/368/overview/" class="ctn" target="_blank">Learn More</a>
+            </div>
+
+            <div class="column">
+                
+                <img src="./exhibit2.jpg" alt="Exbhibition" class="img">
+                <h3>The Armory</h3>
+                <h2>NEW YORK - 2024</h2>
+                <p>The Armory Show brings the world’s leading international contemporary and modern art galleries to New York each year.</p>
+                <a href="https://kristinhjellegjerde.com/exhibitions/450/overview/" class="ctn" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </section>
+        
+        <section class="footer">
+        <p>Creadted by: Lesego Khunou (Front-End Developer) - Location: Upper Woodstock,7925</p>
+        </section>
+
+</body>
+</html>

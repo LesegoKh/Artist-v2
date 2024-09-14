@@ -1,0 +1,212 @@
+body {
+    background-image: url('./aboutImg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display:flexbox;
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fc036b;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    color: #fc036b;
+}
+
+.active {
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.ctn {
+    padding:  8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: black;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+}
+
+.sidenav-trigger {
+    display: none;
+}
+
+header {
+    align-items: start;
+    background-color:transparent;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.brand-logo {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.column {
+    max-height: 300px;
+    margin-top: 70px;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: flexbox;
+    float: right;
+}
+
+.name {
+    display: inline-flex;
+    margin-top:70px;
+    margin-left: 800px;
+    line-height: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.Title {
+    position: relative;
+    max-height: 20px;
+    max-width: 300px;
+    display: flex;
+    
+}
+@media screen and (height:200px) {
+    .sidenav-trigger {
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    .Title {
+        position: relative;
+        max-height: 20px;
+        max-width: 30px;
+        display: flex;
+        
+    }
+    body {
+        max-height: 50%;
+        max-width: 50%;
+        display:flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    span #word {
+       
+        margin-left: 0px;
+        background-color: rgba(190, 181, 181, 0.521);
+        max-height: 250px;
+        max-width: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: 700;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    .pic {
+        max-height: 3%;
+        max-width: 3%;
+        margin-left: 1rem;
+        border-radius: 33px;
+        position:sticky;
+        margin-top: 25px;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .section div {
+        background: url('./kim2.webp');
+        background-size: cover;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        display: flexbox;
+       padding-top: 30px;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+span #word {
+    margin-top: 150px;
+    margin-left: 570px;
+    background-color: rgba(190, 181, 181, 0.521);
+    height: 300px;
+    width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    display: flexbox;
+    justify-content: right;
+    align-items:flex-end;
+    flex-shrink: 5;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.pic {
+    height: 500px;
+    width: 450px;
+    margin-left: 1rem;
+    border-radius: 33px;
+    position:relative;
+    margin-top: 25px;
+    display: flexbox;
+    justify-content: left;
+}

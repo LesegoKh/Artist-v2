@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html"></a>HOME</li1>
+            <li class="active"><a href="./trial.html">ABOUT</a></li>
+            <li class="active"><a href="./columns.html">EXPLORE</a></li>
+            <li class="active"><a href="./collections.html">COLLECTIONS</a></li>
+            <li class="ctn"><a href="#">CONTACT</a></li>
+        </ul>
+       <img src="./menu.png" alt="menu" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore the colourful World!</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="./collections.html" class="ctn">Learn More</a>
+        </div>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </header>
+
+    <!--EVENTS-->
+    <section class="events">
+        <div class="title">
+            <h1>RECENT EXHIBITIONS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./xpo.jpg" alt="Cape_Point">
+                <h4>Chicago Expo</h4>
+                <p>Showcases leading contemporary and modern art galleries each April at Navy Pier’s Festival Hall, alongside a diverse and inventive program of talks, on-site installations, and public art initiatives.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./exhibit.jpg" alt="Lions_Head">
+                <h4>Soulscapes</h4>
+                <p> Soulscapes, a major exhibition of landscape art that expands and redefines the genre. Featuring more than 30 contemporary works, it spans painting, photography, film, tapestry and collage.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Kimathi Mafafo was finalist for the Ares Art Prize (2022) and the recipient of the Norval Foundation Sovereign Art Prize (2022).</p>
+            <a href="./collections.html" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING EXHIBITIONS</h1>
+                <div class="line"></div>
+                    <p>Kimathi Mafafo's work can be found in various international collections which include The Newark Museum of Art, USA;  The Bunker Artspace Collection, Palm Beach, Florida, USA; Kilbourn Collection, Cape Town, South Africa</p>
+                    <a href="https://kristinhjellegjerde.com/exhibitions/450/overview/" class="ctn">Learn More</a>
+                </div>
+
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./exhibit2.jpg" alt="V&A Waterfront">
+
+                       
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Created by: Lesego Khunou - Upper Woodstock, Cape Town, 7925</p>
+        <p>Copyright 2024</p>
+        <img src="./LK.jpg" alt="Lesego" class="pic">
+        
+    </section>
+</body>
+</html>

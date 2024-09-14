@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0 0 0 5px;
+            padding: 0;
+            
+        }
+        .ctn {
+            padding:  8px 15px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+        }
+        
+        .menu-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .navbar {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            color: whitesmoke;
+            align-items: center;
+            
+            
+        }
+        ul {
+            list-style: none;
+            
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links li {
+            margin: 0 30px;
+            
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        .active {
+            color: #fc036b;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .row {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-flow: column;
+            display: grid;
+            gap: 30px 10px;
+            margin:20px 0;
+            
+        }
+        .column img {
+            height: 80%;
+            width: 80%;
+        }
+        .title {
+            padding-top: 80px;
+        }
+        .line {
+            width: 150px;
+            height: 4px;
+            background: #fc036b;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .column {
+            padding-top: 10px;
+            text-align: center;
+            width: 80%;
+            height: auto;
+            background-color: rgba(255, 234, 238, 0.774);
+        }
+        .column h3 {
+            font-weight: 300;
+        }
+        .footer {
+            left: 0;
+            top: 0;
+            width: 100vw;
+            margin: 20px 0;
+            justify-content: end;
+            align-items: end;
+            background-color: rgba(255, 234, 238, 0.774);
+            padding-bottom: 10px;
+
+        }
+        
+
+        /* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px black;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">HOME</a></li>
+            <li class="active"><a href="./trial.html">ABOUT</a></li>
+            <li class="active"><a href="./columns.html">EXPLORE</a></li>
+            <li class="active"><a href="./collections.html">COLLECTIONS</a></li>
+            <li class="ctn"><a href="#">CONTACT</a></li>
+        </ul>
+       
+    </nav>
+
+    <section class="title">
+        <h1>COLLECTIONS</h1>
+        <div class="line"></div>
+    </section>
+    <section>
+    <div class="row">
+        <div class="column">
+            <img src="./col1.jpg" alt="" class="img">
+             <h3>In deep thought - I, She is mesmerized by her self discovery as a sensuous woman, 2023</h3>
+            
+        </div>
+
+        <div class="column">
+            <img src="./col3.jpg" alt="" class="img">
+            <h3>Clearly, A Flamboyant Alliance: A Flamboyant Collaboration, 2023</h3>
+           
+        </div>
+
+        <div class="column">
+            <img src="./col4.jpg" alt="" class="img">
+            <h3>In Pensive Mood, 2024</h3>
+            
+        </div>
+    </div>
+    </section>
+    <section>
+    <div class="row">
+        <div class="column">
+            <img src="./col2.jpg" alt="Your Gaze, 2024" class="img">
+            <h3>Your Gaze, 2024</h3>
+            
+        </div>
+
+        <div class="column">
+            <img src="./col4.jpg" alt="" class="img">
+            <h3></h3>
+            
+        </div>
+
+        <div class="column">
+            <img src="./col1.jpg" alt="" class="img">
+            <h3></h3>
+            
+        </div>
+    </div>
+    <a href="https://www.ebonycurated.com/collections/kimathi-mafafo-1985" target="_blank" class="ctn">See More</a>
+    </section>
+    <section class="footer">
+        <p>Created by: Lesego Khunou(Front-End Developer) - Location:Upper Woodstock, Cape Town, 7925</p>
+    </section>
+</body>
+</html>
